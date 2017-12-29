@@ -6,14 +6,6 @@ assembly_info:
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
-dotnet_csproj:
-  patch: true
-  file: '**\*.csproj'
-  version: '{version}'
-  package_version: '{version}'
-  assembly_version: '{version}'
-  file_version: '{version}'
-  informational_version: '{version}'
 skip_commits:
   files:
     - 'appveyor.yml'
@@ -21,6 +13,7 @@ skip_commits:
 before_build:
 - ps: nuget restore Utils.sln -verbosity quiet
 build:
+  project: Utils.sln
   publish_nuget: true
   include_nuget_references: true
   verbosity: normal
