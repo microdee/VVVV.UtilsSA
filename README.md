@@ -1,5 +1,7 @@
 # VVVV.UtilsSA
 
+[![Build status](https://ci.appveyor.com/api/projects/status/ax0wda2n6x2atlc9?svg=true)](https://ci.appveyor.com/project/microdee/vvvv-utilssa)
+
 Standalone fork of VVVV.Utils from https://github.com/vvvv/vvvv-sdk
 
 This repository isn't a proper fork but a hard copy of VVVV.Utils because unfortunately VVVV.Utils is embedded inside the much larger vvvv-sdk, and it doesn't have its own repo. So it might be behind the "develop" branch of vvvv-sdk as changes there have to be hard-replicated here but much more ahead of what's available on nuget.org.
